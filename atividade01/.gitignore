@@ -1,4 +1,4 @@
 .cache/
 dist/
 node_modules/
-packge-lock.json
+package-lock.json
