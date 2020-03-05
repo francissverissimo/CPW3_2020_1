@@ -2,6 +2,8 @@ export default class CPFController {
 
     validacaoCPF(cpf) {
 
+    	cpf = cpf.replace(/[^\d]+/g, '');
+
         let numeros, digitos, soma, i, resultado, digitos_iguais;
         digitos_iguais = 1;
 

@@ -52,3 +52,5 @@ export default class CNPJController {
         return true;
     }
 }
+
+console.log(validacaoCNPJ("90.244.547/0001-25"));
