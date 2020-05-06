@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de CPF e CNPJ</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <div id="banner">
+        <h1>Validação de CPF e CNPJ</h1>
+    </div>
+
+    <div id="conteudo">
+        <fieldset>
+            <h2>Verifique se um CPF ou CNPJ é válido abaixo:</h2>
+
+            <input type="text" id="numero" placeholder="Digite aqui:" required>
+            <button onclick="validarCPF()">CPF</button>
+            <button onclick="validarCNPJ()">CNPJ</button>
+
+        </fieldset>
+
+        <div id="resposta"></div>
+    </div>
+
+    <div id="rodape">
+        <h2>TSI | IFMS &copy 2020</h2>
+        <span>Francis Veríssimo</span>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

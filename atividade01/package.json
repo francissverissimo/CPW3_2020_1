@@ -1,0 +1,15 @@
+{
+  "name": "atividade01",
+  "version": "1.0.0",
+  "description": "Primeira atividade avaliativa da disciplina de CPW3",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html"
+  },
+  "keywords": [],
+  "author": "Francis Veríssimo",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

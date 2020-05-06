@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/**
+  * No Sass, as variáveis
+  * iniciam com $
+  */
+@font-face {
+  font-family: "decorativa";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "padrao";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+body {
+  margin: 0;
+}
+
+#header {
+  background-color: #001969;
+  padding: 10px 20px;
+  margin-bottom: 0;
+}
+#header * {
+  display: inline;
+  vertical-align: middle;
+}
+#header img {
+  width: 70px;
+  margin-right: 20px;
+}
+#header h1 {
+  font-family: "decorativa";
+  color: #d1d1d1;
+  text-shadow: 2px 2px 1px #0033da,
+  1px 1px #0033da,
+  3px 3px #003cff;
+}
+
+span h3 {
+  margin-top: 0;
+  font-family: "decorativa";
+  background-color: #666666;
+  color: white;
+  padding: 20px;
+  text-shadow: 1px 1px 2px black, -1px 1px 2px black;
+}
+
+#tabelaCopa {
+  margin-top: 20px;
+}
+
+#tabelaCopa table {
+  border-collapse: collapse;
+  margin: 0px auto 50px auto;
+  width: 95%;
+  font-family: "padrao";
+  font-weight: bold;
+  color: #202020;
+}
+
+#tabelaCopa table thead {
+  background-color: #001969;
+  color: #d1d1d1;
+}
+
+#tabelaCopa table tr:hover td {
+  background-color: #b5baff;
+}
+
+#tabelaCopa table tr:nth-child(even) {
+  background-color: #cccccc;
+}
+
+#tabelaCopa table tr td {
+  font-size: 120%;
+}
+
+#tabelaCopa table tr th {
+  text-shadow: 2px 2px 2px black;
+}
+#tabelaCopa table tr th,
+#tabelaCopa table tr td {
+  text-align: center;
+  padding: 5px 0px;
+  /*
+      Regra específica para a
+      primeira coluna
+   */
+  /*
+      Regra específica para a
+      última coluna
+   */
+}
+
+#tabelaCopa table tr th:first-child,
+#tabelaCopa table tr td:first-child {
+  text-align: center;
+  padding-left: 5px;
+}
+
+#tabelaCopa table tr th:last-child,
+#tabelaCopa table tr td:last-child {
+  text-align: center;
+  padding-right: 5px;
+}
+
+#tabelaCopa span {
+  margin-left: 30px;
+  font-family: "padrao";
+}
+
+#cardsCopa {
+  display: none;
+  padding: 5px 0px;
+  margin-top: 20px;
+}
+
+#cardsCopa div {
+  border: 1px solid #001969;
+  box-shadow: 2px 2px #001969;
+  margin: 0px auto 10px auto;
+  width: 90%;
+  border-radius: 5px;
+  padding: 10px 7px 7px 7px;
+}
+
+#cardsCopa div span {
+  font-family: "padrao";
+  font-size: 80%;
+  display: block;
+  text-indent: 42px;
+  /*
+      Deixando a inicial e o
+      restante do nome na mesma
+      linha.
+  */
+}
+
+#cardsCopa div span:first-child, #cardsCopa div span:nth-child(2) {
+  text-indent: 0px;
+  display: inline-block;
+  font-size: 100%;
+  margin-bottom: -5px;
+}
+
+#cardsCopa div span:first-child {
+  background-color: #001969;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+#cardsCopa span {
+  display: block;
+  text-align: center;
+  font-family: "padrao";
+}
+
+#rodape {
+  font-family: "decorativa";
+  font-weight: bold;
+  background-color: #001969;
+  padding: 10px;
+  color: #d1d1d1;
+  text-shadow: 1px 1px 2px #0033da, 2px 2px #0033da;
+}
+
+@media only screen and (max-width: 600px) {
+  #cardsCopa {
+    display: block;
+  }
+
+  #header h1 {
+    font-size: 117%;
+  }
+
+  #tabelaCopa {
+    display: none;
+  }
+}

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "decorativa";
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: "padrao";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+body {
+    background-color: peru;
+    margin: 0;
+}
+
+#banner {
+    font-size: 140%;
+    font-family: "decorativa";
+    padding-left: 20px;
+}
+
+#conteudo {
+    padding-left: 20px;
+    display: table;
+    width: 95%;
+}
+
+label,
+input,
+button {
+    display: block;
+}
+
+input {
+    margin: 5px 0px 20px 5px;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 95%;
+    width: 26%;
+    padding: 2px 6px 2px 6px;
+    box-shadow: 1px 1px 3px #696969, -1px -1px 3px #696969;
+}
+
+button {
+    font-family: 'padrao';
+    display: inline-block;
+    border: none;
+    background-color: brown;
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-right: 2%;
+    box-shadow: 2px 2px 3px #414141, -1px -1px 1px #414141;
+    font-size: 100%;
+}
+
+button:hover {
+    color: #ff976e;
+}
+
+fieldset,
+#resposta {
+    display: table-cell;
+}
+
+fieldset {
+    font-size: 110%;
+    font-family: "padrao";
+    background-color: palegoldenrod;
+    box-shadow: 5px 5px 2px #161616, -4px -4px 2px firebrick;
+    border: none;
+    border-radius: 20px;
+    padding: 0px 25px 25px 25px;
+    margin-bottom: 28px;
+    width: 90%;
+}
+
+#resposta {
+    font-family: "decorativa";
+    text-align: center;
+    padding: 10px;
+    font-size: 200%;
+    vertical-align: middle;
+    width: 50%;
+}
+
+#rodape {
+    font-family: 'decorativa';
+    background-color: #2b2b2b;
+    padding-bottom: 11%;
+
+}
+
+#rodape h2 {
+    background-color: black;
+    font-size: 150%;
+    padding: 20px 0px 20px 20px;
+    text-shadow: 1px 1px 1px peru, -1px -1px 1px peru,
+    1px 1px 1px peru, -1px -1px 1px peru;
+}
+
+#rodape span {
+    font-size: 110%;
+    font-family: 'padrao';
+    color: firebrick;
+    background-color: black;
+    padding: 20px;
+    border-radius: 0px 0px 40px 0px;
+}
