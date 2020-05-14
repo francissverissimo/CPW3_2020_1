@@ -23,7 +23,7 @@ body {
     font-size: 250%;
     text-shadow: 3px 3px black; }
   #banner p {
-    font-family: "padrao"; }
+    font-family: "negrito"; }
 
 #centro {
   display: flex;
@@ -50,7 +50,7 @@ body {
 
 #conteudo {
   width: 80%;
-  padding: 10px; }
+  padding: 20px; }
 
 #rodape {
   background-color: #2c3e50;
