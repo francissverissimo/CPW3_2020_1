@@ -58,8 +58,117 @@ body {
 }
 
 #conteudo {
+
     width: 80%;
-    padding: 20px;
+
+    h2 {
+        padding-left: 20px;
+        font-family: $fonte-negrito;
+        color: $cor-banner;
+    }
+
+    #campoCliente {
+
+        display: flex;
+
+        #cadastroCliente {
+
+            background-color: #ddd;
+            width: 27%;
+            padding: 20px;
+            border-right: 12px groove $cor-banner;
+
+            label,
+            input {
+                display: block;
+            }
+
+            label {
+                margin-bottom: 5px;
+                font-family: $fonte-negrito;
+                color: $cor-banner;
+            }
+
+            input {
+                font-family: $fonte-padrao;
+                font-weight: bold;
+                color: #444;
+                height: 25px;
+                margin-bottom: 20px;
+                border: 1px solid $cor-banner;
+                border-radius: 7px;
+                padding: 5px;
+                font-size: 85%;
+                width: 60%;
+            }
+
+            input[type=submit] {
+                font-family: $fonte-negrito;
+                background-color: $cor-banner;
+                padding: 10px 15px;
+                height: inherit;
+                color: white;
+                border: 2px solid white;
+                border-radius: 10px;
+                width: 30%;
+
+                &:hover {
+                    color: greenyellow;
+                    border: 2px solid greenyellow;
+                }
+            }
+        }
+
+        #visualizacaoClientes {
+
+            background-color: #ddd;
+            width: 68%;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+
+            h3 {
+                margin-top: 5px;
+                font-family: $fonte-negrito;
+                color: $cor-banner;
+            }
+
+            table {
+                border-collapse: collapse;
+                background-color: white;
+                margin: auto;
+                width: 60%;
+
+                thead {
+                    background-color: $cor-banner;
+                    color: white;
+                }
+
+                th {
+                    padding: 5px;
+                }
+
+                tr {
+                    &:hover {
+                        td {
+                            background-color: #dfffb0;
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        background-color: #ddd;
+                    }
+
+                    td {
+                        font-size: 90%;
+                        font-weight: bold;
+                        padding: 5px;
+                        color: #555;
+                    }
+                }
+            }
+        }
+    }
 }
 
 #rodape {

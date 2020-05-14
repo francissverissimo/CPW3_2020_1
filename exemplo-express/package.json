@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src/server.js",
-    "sass": "node-sass src/public/styles/estilos.scss src/public/styles/estilos.css --watch"
+    "sass": "node-sass --watch src/public/styles/estilos.scss src/public/styles/estilos.css"
   },
   "keywords": [],
   "author": "",

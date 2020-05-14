@@ -1,5 +1,9 @@
 import express from 'express';
 import path from 'path';
+import bodyParser from 'body-parser' 
+
+import rotasView from './routes/view';
+import { FALSE } from 'node-sass';
 
 const app = express();
 
@@ -15,13 +19,13 @@ app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
 
 /**
- * Criando a rota da página de clientes
+ * Configuração do Body Parser
  */
-app.get('/clientes', (req, res) => res.render('clientes'));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 /**
- * Criando a rota da página inicial
+ * Rotas de view
  */
-app.get('/', (req, res) => res.render('index'));
+app.use('/', rotasView);
 
 export default app;
