@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'padrao';
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'negrito';
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'decorativa';
+    src: url(../fonts/CinzelDecorative-Black.ttf);
+}
+
+$fonte-padrao: 'padrao';
+$fonte-negrito: 'negrito';
+$fonte-decorativa: 'decorativa';

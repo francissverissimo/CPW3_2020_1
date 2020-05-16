@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'padrao';
+  src: url(../fonts/Ubuntu-Regular.ttf); }
+
+@font-face {
+  font-family: 'negrito';
+  src: url(../fonts/Ubuntu-Bold.ttf); }
+
+@font-face {
+  font-family: 'decorativa';
+  src: url(../fonts/CinzelDecorative-Black.ttf); }
+
+body {
+  margin: 0; }
+
+#banner {
+  background-color: #cf6766;
+  text-align: center;
+  padding: 20px 0px 20px 0px; }
+  #banner h1 {
+    color: #ddd;
+    font-family: "decorativa";
+    font-size: 260%;
+    text-shadow: 3px 3px 3px #3a0000; }
+
+#centro {
+  display: flex;
+  font-family: "padrao"; }
+
+#menu {
+  font-size: 110%;
+  width: 20%;
+  background-color: #30415d;
+  color: white;
+  padding: 20px 0px 40px 20px; }
+  #menu span {
+    font-size: 150%;
+    font-family: "negrito"; }
+  #menu ul {
+    list-style: none;
+    padding-left: 0; }
+    #menu ul a {
+      text-decoration: none;
+      color: white; }
+      #menu ul a:hover {
+        color: #8eaebd; }
+    #menu ul li {
+      margin-bottom: 10px; }
+
+#conteudo {
+  padding-right: 30px;
+  width: 80%;
+  background-color: #bbbbbb;
+  font-size: 110%; }
+  #conteudo p {
+    color: #30415d; }
+  #conteudo h2 {
+    padding-left: 20px;
+    font-family: "negrito";
+    color: #30415d;
+    margin: 10px; }
+  #conteudo #bio {
+    display: flex; }
+    #conteudo #bio p {
+      padding: 0 30px;
+      color: #30415d; }
+  #conteudo #imagen {
+    width: 90%; }
+    #conteudo #imagen img {
+      padding: 20px 30px; }
+  #conteudo #contato {
+    padding: 5px 20px; }
+    #conteudo #contato h4 {
+      color: #30415d;
+      font-family: "negrito";
+      padding-bottom: 10px;
+      width: 100%; }
+    #conteudo #contato span {
+      font-family: "padrao";
+      background-color: #dddddd;
+      padding: 5px;
+      border: 2px solid #30415d;
+      border-radius: 12px;
+      width: 100%; }
+
+.port {
+  display: flex;
+  width: 100%; }
+  .port #imagen {
+    width: 20%; }
+  .port #texto {
+    vertical-align: middle;
+    font-size: 130%;
+    padding: 80px;
+    width: 80%; }
+
+img {
+  width: 95%; }
+
+#rodape {
+  background-color: #031424;
+  color: #8eaebd;
+  padding: 20px;
+  font-size: 100%;
+  font-family: "negrito"; }
+
+@media only screen and (max-width: 600px) {
+  #banner {
+    padding: 5px 0px; }
+    #banner h1 {
+      font-size: 200%; }
+  #centro,
+  #menu,
+  #conteudo {
+    display: block; }
+  #menu {
+    padding: 1px;
+    text-align: center;
+    font-size: 100%;
+    margin-bottom: 0;
+    width: auto; }
+    #menu span {
+      display: none; }
+    #menu li {
+      display: inline;
+      padding: 0px 10px; }
+  #conteudo {
+    width: auto;
+    margin: 0;
+    padding: 10px; }
+    #conteudo h2 {
+      font-size: 100%;
+      margin: 0;
+      padding: 10px 20px 0 20px; }
+    #conteudo #bio p {
+      padding: 0 18px 20px 20px;
+      margin-bottom: 0;
+      font-size: 110%;
+      color: #30415d; }
+    #conteudo #contato h4 {
+      width: 100;
+      font-size: 80%; }
+    #conteudo #contato span {
+      width: 100%;
+      font-size: 90%; }
+  #rodape {
+    font-size: 85%;
+    padding: 10px; } }

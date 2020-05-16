@@ -1,0 +1,223 @@
+@import 'fontes';
+@import 'cores';
+
+body {
+    margin: 0;
+}
+
+#banner {
+    background-color: $cor-banner;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+
+    h1 {
+        color: #ddd;
+        font-family: $fonte-decorativa;
+        font-size: 260%;
+        text-shadow: 3px 3px 3px #3a0000;
+    }
+}
+
+#centro {
+    display: flex;
+    font-family: $fonte-padrao;
+}
+
+#menu {
+    font-size: 110%;
+    width: 20%;
+    background-color: $cor-menu;
+    color: white;
+    padding: 20px 0px 40px 20px;
+
+    span {
+        font-size: 150%;
+        font-family: $fonte-negrito;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: $cor-hover;
+            }
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+#conteudo {
+
+    padding-right: 30px;
+    width: 80%;
+    background-color: $cor-conteudo;
+    font-size: 110%;
+
+    p {
+        color: $cor-menu;
+    }
+
+    h2 {
+        padding-left: 20px;
+        font-family: $fonte-negrito;
+        color: $cor-menu;
+        margin: 10px;
+    }
+
+    #bio {
+
+        display: flex;
+        
+        p {
+            padding: 0 30px;
+            color: $cor-menu;
+        }
+    }
+
+    #imagen {
+
+        width: 90%;
+
+        img {
+            padding: 20px 30px;
+        }
+    }
+
+    #contato {
+
+        padding: 5px 20px;
+
+        h4 {
+            color: $cor-menu;
+            font-family: $fonte-negrito;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        span {
+            font-family: $fonte-padrao;
+            background-color: #dddddd;
+            padding: 5px;
+            border: 2px solid $cor-menu;
+            border-radius: 12px;
+            width: 100%;
+        }
+    }
+}
+
+.port {
+
+    display: flex;
+    width: 100%;
+
+    #imagen {
+        width: 20%;
+
+        img {
+        }
+    }
+
+    #texto {
+        vertical-align: middle;
+        font-size: 130%;
+        padding: 80px;
+        width: 80%;
+    }
+}
+
+img {
+    width: 95%;
+}
+
+#rodape {
+    background-color: $cor-rodape;
+    color: $cor-hover;
+    padding: 20px;
+    font-size: 100%;
+    font-family: $fonte-negrito;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #banner {
+        padding: 5px 0px;
+
+        h1 {
+            font-size: 200%;
+        }
+    }
+
+    #centro,
+    #menu,
+    #conteudo {
+
+        display: block;
+    }
+
+    #menu {
+
+        padding: 1px;
+        text-align: center;
+        font-size: 100%;
+        margin-bottom: 0;
+        width: auto;
+
+        span {
+            display: none;
+        }
+
+        li {
+            display: inline;
+            padding: 0px 10px;
+        }
+    }
+
+    #conteudo {
+
+        width: auto;
+        margin: 0;
+        padding: 10px;
+
+        h2 {
+            font-size: 100%;
+            margin: 0;
+            padding: 10px 20px 0 20px;
+        }
+
+        #bio {
+
+            p {
+                padding: 0 18px 20px 20px;
+                margin-bottom: 0;
+                font-size: 110%;
+                color: $cor-menu;
+            }
+        }
+
+        #contato {
+
+            h4 {
+                width: 100;
+                font-size: 80%;
+            }
+
+            span {
+                width: 100%;
+                font-size: 90%;
+            }
+        }
+    }
+
+    #rodape {
+        font-size: 85%;
+        padding: 10px;
+    }
+}
