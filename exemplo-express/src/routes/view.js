@@ -32,7 +32,7 @@ router.get('/clientes', (req, res) => {
 });
 
 /**
- * Criando a rotao para salvar um novo cliente
+ * Criando a rotas para salvar um novo cliente
  */
 router.post('/clientes', (req, res) => {
     const nome = req.body.nome;
