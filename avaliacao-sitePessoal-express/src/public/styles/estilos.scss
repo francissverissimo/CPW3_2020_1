@@ -61,10 +61,6 @@ body {
     background-color: $cor-conteudo;
     font-size: 110%;
 
-    p {
-        color: $cor-menu;
-    }
-
     h2 {
         padding-left: 20px;
         font-family: $fonte-negrito;
@@ -72,16 +68,7 @@ body {
         margin: 10px;
     }
 
-    #bio {
-
-        display: flex;
-        
-        p {
-            padding: 0 30px;
-            color: $cor-menu;
-        }
-    }
-
+    // index
     #imagen {
 
         width: 90%;
@@ -91,6 +78,55 @@ body {
         }
     }
 
+    // bio
+    #bio {
+
+        display: flex;
+        width: 100%;
+        margin: 30px;
+
+        img {
+            width: 30%;
+            border: 2px solid $cor-menu;
+            padding: 20px;
+        }
+
+        #texto {
+
+            width: 70%;
+
+            p {
+                padding: 0 20px;
+                color: $cor-menu;
+                width: auto;
+            }
+        }
+    }
+
+    // portfolio
+    #port {
+
+        display: flex;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+    
+        img {
+            width: 30%;
+            padding: 10px;
+            border: 2px solid $cor-menu;
+        }
+    
+        p {
+            color: $cor-menu;
+            font-size: 120%;
+            padding: 30px 50px;
+            width: 60%;
+            margin: 20px;
+        }
+    }
+
+    // contato
     #contato {
 
         padding: 5px 20px;
@@ -111,30 +147,6 @@ body {
             width: 100%;
         }
     }
-}
-
-.port {
-
-    display: flex;
-    width: 100%;
-
-    #imagen {
-        width: 20%;
-
-        img {
-        }
-    }
-
-    #texto {
-        vertical-align: middle;
-        font-size: 130%;
-        padding: 80px;
-        width: 80%;
-    }
-}
-
-img {
-    width: 95%;
 }
 
 #rodape {
@@ -193,12 +205,46 @@ img {
         }
 
         #bio {
+            width: auto;
+            display: block;
+            padding: 0px;
+            margin: 10px;
+
+            img {
+                padding: 0;
+                border: none;
+                width: 100%;
+            }
+
+            #texto {
+                width: auto;
+            }
 
             p {
-                padding: 0 18px 20px 20px;
-                margin-bottom: 0;
-                font-size: 110%;
-                color: $cor-menu;
+                text-align: center;
+                width: 60%;
+                margin: 15px;
+                font-size: 100%;
+            }
+        }
+
+        #port {
+
+            display: block;
+            margin: 0;
+            padding: 20px;
+            width: auto;
+            
+            img {
+                width: 95%;
+                border: none;
+            }
+
+            p {
+                text-align: center;
+                width: 100%;
+                padding: 20px 0;
+                margin: 0px;
             }
         }
 
