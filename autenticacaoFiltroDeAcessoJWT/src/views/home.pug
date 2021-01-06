@@ -1,0 +1,13 @@
+extends layout
+
+block cadastrar
+    a(href="/cadastro")
+        input(type="submit" id="cadastrar" value="Cadastrar")
+
+block sair
+    a(href="/")
+        input(type="submit" id="sair" value="Sair")
+
+block conteudo
+    #home
+        h2 Olá, #{usuario.nome}!
